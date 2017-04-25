@@ -61,12 +61,67 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.ndarray">module ndarray</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.ndarray.ndarray">
+            function <span class="apidocSignatureSpan"></span>ndarray
+            <span class="apidocSignatureSpan">(data, shape, stride, offset)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.ndarray" id="apidoc.module.ndarray">module ndarray</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.ndarray.ndarray" id="apidoc.element.ndarray.ndarray">
+        function <span class="apidocSignatureSpan"></span>ndarray
+        <span class="apidocSignatureSpan">(data, shape, stride, offset)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function wrappedNDArrayCtor(data, shape, stride, offset) {
+  if(data === undefined) {
+    var ctor = CACHED_CONSTRUCTORS.array[0]
+    return ctor([])
+  } else if(typeof data === &#x22;number&#x22;) {
+    data = [data]
+  }
+  if(shape === undefined) {
+    shape = [ data.length ]
+  }
+  var d = shape.length
+  if(stride === undefined) {
+    stride = new Array(d)
+    for(var i=d-1, sz=1; i&#x3e;=0; --i) {
+      stride[i] = sz
+      sz *= shape[i]
+    }
+  }
+  if(offset === undefined) {
+    offset = 0
+    for(var i=0; i&#x3c;d; ++i) {
+      if(stride[i] &#x3c; 0) {
+        offset -= (shape[i]-1)*stride[i]
+      }
+    }
+  }
+  var dtype = arrayDType(data)
+  var ctor_list = CACHED_CONSTRUCTORS[dtype]
+  while(ctor_list.length &#x3c;= d+1) {
+    ctor_list.push(compileConstructor(dtype, ctor_list.length-1))
+  }
+  var ctor = ctor_list[d+1]
+  return ctor(data, shape, stride, offset)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

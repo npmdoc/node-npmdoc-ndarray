@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/mikolalysenko/ndarray"
-
-    >ndarray (v1.0.18)</a>
+    <a href="https://github.com/mikolalysenko/ndarray">ndarray (v1.0.18)</a>
 </h1>
 <h4>Multidimensional Arrays</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.ndarray">module ndarray</a><ol>
 
@@ -89,7 +82,7 @@
   if(data === undefined) {
     var ctor = CACHED_CONSTRUCTORS.array[0]
     return ctor([])
-  } else if(typeof data === &#x22;number&#x22;) {
+  } else if(typeof data === "number") {
     data = [data]
   }
   if(shape === undefined) {
@@ -98,22 +91,22 @@
   var d = shape.length
   if(stride === undefined) {
     stride = new Array(d)
-    for(var i=d-1, sz=1; i&#x3e;=0; --i) {
+    for(var i=d-1, sz=1; i&gt;=0; --i) {
       stride[i] = sz
       sz *= shape[i]
     }
   }
   if(offset === undefined) {
     offset = 0
-    for(var i=0; i&#x3c;d; ++i) {
-      if(stride[i] &#x3c; 0) {
+    for(var i=0; i&lt;d; ++i) {
+      if(stride[i] &lt; 0) {
         offset -= (shape[i]-1)*stride[i]
       }
     }
   }
   var dtype = arrayDType(data)
   var ctor_list = CACHED_CONSTRUCTORS[dtype]
-  while(ctor_list.length &#x3c;= d+1) {
+  while(ctor_list.length &lt;= d+1) {
     ctor_list.push(compileConstructor(dtype, ctor_list.length-1))
   }
   var ctor = ctor_list[d+1]
@@ -131,3 +124,4 @@
     ]
 </div>
 </div>
+</body></html>
