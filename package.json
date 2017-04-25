@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "ndarray",
-    "description": "api documentation for [ndarray (v1.0.18)](https://github.com/mikolalysenko/ndarray) [![npm package](https://img.shields.io/npm/v/npmdoc-ndarray.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ndarray) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ndarray.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ndarray)",
+    "description": "#### basic api documentation for  [ndarray (v1.0.18)](https://github.com/mikolalysenko/ndarray)  [![npm package](https://img.shields.io/npm/v/npmdoc-ndarray.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ndarray) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ndarray.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ndarray)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "ndarray": "*",

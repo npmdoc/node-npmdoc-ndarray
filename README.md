@@ -1,9 +1,14 @@
-# api documentation for  [ndarray (v1.0.18)](https://github.com/mikolalysenko/ndarray)  [![npm package](https://img.shields.io/npm/v/npmdoc-ndarray.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ndarray) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ndarray.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ndarray)
+# npmdoc-ndarray
+
+#### basic api documentation for  [ndarray (v1.0.18)](https://github.com/mikolalysenko/ndarray)  [![npm package](https://img.shields.io/npm/v/npmdoc-ndarray.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-ndarray) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-ndarray.svg)](https://travis-ci.org/npmdoc/node-npmdoc-ndarray)
+
 #### Multidimensional Arrays
 
-[![NPM](https://nodei.co/npm/ndarray.png?downloads=true)](https://www.npmjs.com/package/ndarray)
+[![NPM](https://nodei.co/npm/ndarray.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ndarray)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-ndarray/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-ndarray%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ndarray/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-ndarray/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-ndarray/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-ndarray/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-ndarray/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-ndarray/build/screenCapture.npmPackageListing.svg)
 
@@ -66,33 +71,26 @@
     "main": "ndarray.js",
     "maintainers": [
         {
-            "name": "mikolalysenko",
-            "email": "mikolalysenko@gmail.com"
+            "name": "mikolalysenko"
         },
         {
-            "name": "jaspervdg",
-            "email": "th.v.d.gronde@hccnet.nl"
+            "name": "jaspervdg"
         },
         {
-            "name": "rreusser",
-            "email": "rsreusser@gmail.com"
+            "name": "rreusser"
         },
         {
-            "name": "planeshifter",
-            "email": "pgb@andrew.cmu.edu"
+            "name": "planeshifter"
         },
         {
-            "name": "hughsk",
-            "email": "hughskennedy@gmail.com"
+            "name": "hughsk"
         },
         {
-            "name": "substack",
-            "email": "substack@gmail.com"
+            "name": "substack"
         }
     ],
     "name": "ndarray",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/mikolalysenko/ndarray.git"
@@ -116,19 +114,10 @@
             "android-browser/4.2..latest"
         ]
     },
-    "version": "1.0.18"
+    "version": "1.0.18",
+    "bin": {}
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module ndarray](#apidoc.module.ndarray)
-
-
-
-# <a name="apidoc.module.ndarray"></a>[module ndarray](#apidoc.module.ndarray)
 
 
 
